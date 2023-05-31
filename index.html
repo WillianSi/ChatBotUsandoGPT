@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="icon" href="/img/agente.png">
+	<link rel="stylesheet" href="stilo.css">
+	<title>Meu chatbot</title>
+</head>
+
+<body>
+	<div id="app" class="chatbox">
+		<div class="colorPanel" style="display: none;">
+			<!-- Paleta de cores aqui -->
+		</div>
+		<div class="chatbox__header">
+			<div class="chatbox__headerText">Chatboot
+				<div class="chatbox__onlineDot"></div>
+			</div>
+			<div>
+				<button class="chatbox__button" id="clear-button"><img src="/img/lixo.png" alt=""></button>
+			</div>
+		</div>
+		<div class="chatbox__messages" id="message-list"></div>
+		<div class="chatbox__inputPanel">
+			<input class="chatbox__input" type="text" placeholder="Mensagens" id="message-input">
+			<button id="send-button"><img src="/img/enviar.png" alt=""></button>
+			<div class="chatbox__tooltip"></div>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>
